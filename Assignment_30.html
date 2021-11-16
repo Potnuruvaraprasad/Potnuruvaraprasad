@@ -1,0 +1,47 @@
+
+   
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment_30</title>
+    </head>
+    <body>
+       <h1>EMPLOYEE DETAILS by object oriented  (Press F12)</h1>
+        <script>
+                var employe = {
+                details : ()=>{
+                    this.name = prompt("Enter your Name"); 
+                    this.gender = prompt("Enter your gender");
+                    this.branch = prompt("Enter your branch");
+                    salary = prompt("Enter your Salary(in Number only ex:40000)");
+                    this.salary = parseInt(salary);
+                    employe.cal();
+                },
+                cal : () =>{
+                    total = this.salary + (this.salary*(24/100)) + (this.salary*(14/100));
+                    this.total = parseFloat(total);
+                    console.log("Salary with (D.A & H.R.F) : " + this.total);
+                    employe.condition();
+                },
+                condition : () => {
+                    if(this.total >= 5000){
+                        this.total = ((this.total) - (this.total*(15/100)));
+                        console.log("Total salary with 15% tax : " + this.total);
+                        
+                    } else {
+                        console.log("Total salary without tax : " + this.total);
+                    }
+                    employe.call();
+                },
+                call : () =>{
+                    console.log("Name :  " + this.name);
+                    console.log("Gender : " + this.gender);
+                    console.log("Branch : " + this.branch);
+
+                }
+            };
+           employe.details();
+            
+         </script>
+    </body>
+</html>
