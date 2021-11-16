@@ -1,0 +1,36 @@
+
+   
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment_29</title>
+    </head>
+    <body>
+       <h1>EMPLOYEE DETAILS by JSON (Press F12)</h1>
+        <script>
+            // here i assign value to the variable
+            var employeDetails = () =>{
+                var employe = {};
+                employe.name = prompt("Enter your Name");
+                console.log("Name :  " + employe.name);
+                employe.gender = prompt("Enter your gender");
+                console.log("Gender : " + employe.gender);
+                employe.branch = prompt("Enter your branch");
+                console.log("Branch : " + employe.branch);
+                salary = prompt("Enter your Salary(in Number only ex:40000)");
+                employe.salary = parseInt(salary);
+                total = employe.salary + (employe.salary*(24/100)) + (employe.salary*(14/100));
+                employe.total = parseFloat(total);
+                console.log("Salary with (D.A & H.R.F) : " + employe.total);
+                if(employe.total >= 5000){
+                    employe.total = ((employe.total) - (employe.total*(15/100)));
+                    console.log("Total salary with 15% tax : " + employe.total);
+                     
+                }else{
+                    console.log("Total salary without tax : " + employe.total);
+                }
+            }
+            employeDetails();
+        </script>
+    </body>
+</html>
