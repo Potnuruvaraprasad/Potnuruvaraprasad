@@ -1,0 +1,33 @@
+
+   
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment_22</title>
+    </head>
+    <body>
+       <h1>EMPLOYEE DETAILS by function and return (Press F12)</h1>
+        <script>
+            // here i assign value to the variable
+            function employeDetails (){
+                var name = prompt("Enter your Name"); 
+                var salary = prompt("Enter your Salary(in Number only ex:40000)");
+                var salary = parseInt(salary);
+                var total = salary + (salary*(24/100)) + (salary*(14/100));
+                var total = parseFloat(total);
+                var output = checkCondition(total);
+                console.log("NAME : " + name);
+                console.log("Salary with 15% tax : " + output);
+            }         
+            function checkCondition (totalsal){  
+                if(totalsal >= 5000){
+                     var tax = ((totalsal) - (totalsal*(15/100)));
+                }else{
+                    tax = totalsal;
+                }
+                return tax;
+            }
+            employeDetails();
+        </script>
+    </body>
+</html>
