@@ -1,0 +1,48 @@
+
+   
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment25</title>
+    </head>
+    <body>
+        <h1>SHOW THE LARGEST & SMALLEST NUMBER IN ARAY</h1>
+        <script>
+            var evenNumber = () => {
+                var number = [89, -4 , 4, 7,  0, 123 , 254 , 1058,894 , 0 , -697 , 1, -4586], smallest_num = 0 , largest_num = 0;
+                for (var i = 0 ; i < number.length ; i++ ){
+                    for(var j = 0 ; j < number.length ; j++){
+                        if(number[i] >= number[j]){
+                            smallest_num = number[j];   
+                            for(k = 0; k < number.length; k++) {
+                                if(number[k]<= smallest_num) {
+                                    smallest_num = number[k]
+                                }
+                            }
+                            console.log("smallest number :  " + smallest_num);
+                            break;
+                        }
+                    }
+                    for(var j = 0 ; j < number.length ; j++){
+                        if(number[i] <= number[j]){
+                            largest_num = number[j];
+                            for(m = 0; m < number.length; m++) {
+                                if(number[m]>= largest_num) {
+                                    largest_num = number[m]
+                                }
+                            }
+                            
+                            console.log("largest nuber :  " + largest_num);
+                            break;       
+                        }
+                    }
+                    break;
+                }
+            }
+            evenNumber();
+        </script>
+    </body>
+</html>
