@@ -1,0 +1,142 @@
+
+   
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="RegistationForm.css">
+        <title>Registation_Form</title>
+    </head>
+    <body>
+        <ul id="mainul">
+            <h1>REGISTATION FORM</h1>
+            <li id="firstli">
+                <ul>
+                    <h1>USER DETAILS</h1>
+                    <li>
+                        <div class="levl">
+                            <label>User Id :</label>
+                        </div>
+                        <div class="inp">
+                            <input type="text" id="userid">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="levl">
+                            <label>Password :</label>
+                        </div>
+                        <div class="inp" >
+                            <input type="text" id="password">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="levl">
+                            <label>E-Mail Id :</label>
+                        </div>
+                        <div class="inp">
+                            <input type="text" id="email">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="levl">
+                            <label>Gender:</label>
+                        </div>
+                        <div class="inp">
+                            <input type="radio" name="Gender" value="male"  id="male"> Male 
+                            <input type="radio" name="Gender" value="female" id="female"> Female 
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li id="sedli">
+                <ul>
+                    <h1>QUALIFICATION</h1>
+                    <li id="langli">
+                        <div class="levl2">
+                            <label>Language You Know:</label>
+                        </div>
+                        <div class="inp2">
+                            <input type="checkbox" clss="lang"> Hindi 
+                            <input type="checkbox" clss="lang"> English
+                            <input type="checkbox" clss="lang"> Franch
+                            <input type="checkbox" clss="lang"> Odia 
+                        </div>
+                    </li>
+                    <li id="eduli">
+                        <div class="levl2">
+                            <label>Education  :</label>
+                        </div>
+                        <div class="inp2">
+                           <select id="#eduacation">
+                               <option value="select">Select</option>
+                               <option value="B.tech">B.Tech</option>
+                               <option value="B.com">B.com</option>
+                               <option value="Data Science">Data Science</option>
+                               <option value="B.A.C">B.A.c</option>
+                               <option value="Diploma">Diploma</option>
+                           </select>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li id="dnoli">
+                <ul> 
+                    <h1>ADDRESS</h1>
+                    <li>
+                        <div class="levl">
+                            <label>D.No :</label>
+                        </div>
+                        <div class="inp">
+                            <input type="text">
+                        </div>
+                    </li>
+                    
+                    <li >
+                        <div class="levl">
+                            <label>Country  :</label>
+                        </div>
+                        <div class="inp">
+                           <select>
+                            <option value="Select">Select</option>
+                               <option value="India">India</option>
+                               <option value="USA">USA</option>
+                               <option value="London">London</option>
+                               <option value="Philiphins">Philiphins</option>
+                               <option value="Canada">Canada</option>
+                           </select>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="levl">
+                            <label>State  :</label>
+                        </div>
+                        <div class="inp">
+                           <select>
+                            <option value="Select">Select</option>
+                               <option value="Odisha">Odisha</option>
+                               <option value="A.P">A.P</option>
+                               <option value="U.P">U.P</option>
+                               <option value="Karnataka">Karnataka</option>
+                               <option value="Tamilnadu">Tamilnadu</option>
+                           </select>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="levl">
+                            <label>PIN code :</label>
+                        </div>
+                        <div class="inp">
+                            <input type="text">
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li id="btn">
+                <input type="button" value="Submit" onclick="getdata();">
+            </li>
+        </ul>
+    </body>
+    <script src="RegistationForm.js"></script>
+</html>
