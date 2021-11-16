@@ -1,0 +1,56 @@
+
+   
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Assignment21
+		</title>
+	</head>
+	<body>
+        <h1>Student details by Function (Press F12)</h1>
+		<script type="text/javascript">
+        var sname , age , gende , m1 , m2;
+            function studentDetails (){
+                sname = prompt("Enter student name");
+                age = prompt("enter age");
+                gender = prompt("Enter user Gender");
+                m1 = prompt("Subject 1");
+                m1 = parseInt(m1);
+                m2 = prompt("Subject 2");
+                m2 = parseInt(m2);
+                m3 = prompt("Subject 3");
+                m3 = parseInt(m3);
+                calculation(m1 , m2 , m3);
+            }
+            function calculation (fastsub ,secondsub, thardsub){
+                total = fastsub + secondsub + thardsub;
+                var avg = total / 3;
+                avg = parseInt(avg);
+                condition(avg);
+            }		
+            function condition (avarage){
+                if (avarage >= 40) {
+                    if ( avarage >= 90)  {
+                        console.log("Got Distiction");
+                    } else if (avarage >= 60) {
+                        console.log("Got first class");
+                    } else {
+                        console.log("Got Second class");
+                    }
+                } else {
+                    console.log("Student Is Failed");
+                }	
+                output(avarage);
+            }
+            function output (avgoutput){
+                console.log("Studnt  name is :- " + sname);
+                console.log("Gaender is :- " + gender);
+                console.log("Age is :- " + age);
+                console.log("Total is :- " + total);
+                console.log("Avg is :- " + avgoutput); 
+            }
+			studentDetails();
+		</script>
+	</body>
+</html>
