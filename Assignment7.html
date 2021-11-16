@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment7</title>
+        <style>
+              /* here i apply all css proporty*/
+            body{
+                background-color: rgb(242, 243, 157);
+                }
+                #maindiv{
+                border: 3px solid green;
+                text-align: center;
+                background-color: rgb(88, 243, 158);
+                color: blue;
+                width: 98%;
+                position: fixed;
+                top: 10px;
+                opacity: 0.8;
+                z-index: 3;
+                }
+            #maindiv:hover{
+                text-decoration: underline rgb(0, 0, 0);
+                background-color: rgb(133, 248, 214);
+                opacity: 1;
+            } 
+            #footer{
+                width: 99.5%;
+                height: 50px;
+                border: 3px solid green;
+                position: relative;
+                top: 1050px;
+                text-align: center;
+                text-decoration: crimson;
+                background-color: rgb(88, 243, 158);
+                z-index: 1;
+            }
+            #copyright{
+                padding: 1px;
+                color: crimson;
+                font-size: large;   
+            }
+            #footer:hover{
+                background-color: rgb(110, 243, 69);
+            }
+            #contenor{
+                border: 3px solid;
+                height: 910px;
+                width: 98%;
+                position: absolute;
+                top: 121px;
+                background-color: #d3cbcb;
+                z-index: 1;
+            }
+            li{
+                list-style: none;
+            }
+            .box{
+                border: 2px solid;
+                background-color: rgb(110, 212, 238);
+                height: 200px;
+                width: 1219px;
+            }
+            .box1{
+                margin: 50px 10px;
+            }
+            .box2{
+                margin: 50px 10px;
+            }
+            .details{
+                padding: 25px 10px;
+                margin: 10px 10px;
+            }
+            .input{
+                padding: 10px;
+                width: 400px;
+            }
+            .textarea{
+                padding: 42px 16px;
+            }
+            #lebel{
+                padding: 5px 5px;
+            }
+            #submit{
+                text-align: left;
+                position: absolute;
+                left: 585px;
+                top: 863px;
+                
+            }
+            .heading{
+                border: 2px solid;
+                height: 46px;
+                width: 175px;
+                background-color: aquamarine;
+                text-align: center;
+            }
+            .heading1{
+                position: absolute;
+                top: 23px;
+                left: 97px;
+            }
+            .heading2{
+                position: absolute;
+                top: 278px;
+                left: 97px;
+            }
+            .heading3{
+                position: absolute;
+                top: 530px;
+                left: 97px;
+            }
+            .headingtext{
+                position: absolute;
+                top: 15px;
+                left: 10px;
+            }
+            .headingtext1{
+                position: absolute;
+                top: 15px;
+                left: 50px;
+            }
+            .headingtext2{
+                position: absolute;
+                top: 15px;
+                left: 47px;
+            }
+            li:hover{
+                background-color: rgb(220, 238, 119);
+            }
+            .head:hover{
+                background-color: crimson;
+            }
+            #bttn{
+                background-color: rgb(58, 199, 58);
+                width: 70px;
+                height: 30px;
+            }
+            #bttn:hover{
+                background-color: rgb(182, 40, 40);
+            }
+            input:hover{
+                background-color: rgb(238, 69, 69);
+            }
+            textarea:hover{
+                background-color: rgb(89, 231, 89);
+            }
+            select{
+                background-color: rgb(211, 86, 236);
+            }
+        </style>
+    </head>
+    <body>
+         <!--HEARDING START-->
+         <div id="maindiv">
+            <h1>REGISTARTION FORM</h1>
+        </div>
+        <!--HEADING END-->
+        <div id="contenor">
+            <form action="https://www.google.co.in/" method="get"> 
+                <ul>
+                    <li class="box1 box">
+                        <div class="heading heading1 head"><span class="headingtext">PERSONAL DETAILS</span></div>
+                        <ul class="details">
+                            <li class="input">
+                                <label name="uname">Name:</label>
+                                <input type="text" name="uname">
+                            </li>
+                            <li class="input">
+                                <label name="age">Age:</label>
+                                <input type="text"  name="age">
+                            </li>
+                            <li class="input">
+                                <label name="gender">Gender:</label>
+                                <input type="radio" name="gender" value="male">Male
+                                <input type="radio" name="gender" value="female">Female
+
+                            </li>
+                            <li>
+                                <label name="loc">Location:</label>
+                                <select name="loc">
+                                    <option>Palasa</option>
+                                    <option>Gokarnapuram</option>
+                                    <option>Aruku</option>
+                                    <option>Vishakapatanam</option>
+                                    <option>Srikakulam</option>
+                                    <option>Andhrapradesh</option>
+                                </select>
+                            </li>
+                        </ul>
+                       
+                    </li>
+                    <li class="box2 box">
+                        <div class="heading heading2  head"><span class="headingtext1">ADDRESS</span></div>
+                        <ul class="details">
+                            <li class="input">
+                                <label name="loc">Dno.:</label>
+                                <input type="text" name="loc">
+                            </li>
+                            <li class="input">
+                                <label name="state">State:</label>
+                                <select name="state">
+                                    <option>Andhrapradesh</option>
+                                    <option>Hyderabad</option>
+                                    <option>Delhi</option>
+                                    <option>Jammu&Kashmir</option>
+                                    <option>Tamilnadu</option>
+                                    <option>Westbengal</option>
+                                </select>
+                            </li>
+                            <li class="input">
+                                <label name="con">Country:</label>
+                                <select name="con">
+                                    <option>India</option>
+                                    <option>USA</option>
+                                    <option>Bangladesh</option>
+                                    <option>BHUTAN</option>
+                                    <option>Srilanka</option>
+                                    <option>England</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="box3 box textarea">
+                        <div class="heading heading3  head"><span class="headingtext2">ABOUT US</span></div>
+                        <span id="lebel"><label name="fed">Few Words:</label></span>
+                        <textarea rows="13" cols="140" name="fed"></textarea>
+                    </li>
+                    <span id="submit"> 
+                        <input type="submit" value="Save" id="bttn">
+                    </span>
+                </ul>
+            </form> 
+        </div>
+        <!--FOOTER START-->
+        <div id="footer">
+            <p id="copyright">copyright@Varaprasad</p>
+        </div>
+        <!--FOOTER END-->  
+    </body>
+</html>
