@@ -1,0 +1,33 @@
+
+   
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment27</title>
+    </head>
+    <body>
+        <h1>SHOW THE 2nd LARGEST NUMBER IN ARAY</h1>
+        <script>
+            var decendigOrder = () => {
+                var number = [2,1,30,5,8,23,0,3], smallest_num = [] , num;
+                for (var i = 0 ; i < number.length ; i++ ){
+                    num = 0;
+                    for(var j = 0 ; j < smallest_num.length ; j++){
+                        if(number[i] > smallest_num[j]){  
+                            num = 1;
+                            smallest_num.splice(j,0,number[i]);
+                            break;
+                        }
+                    } 
+                    if(!num)
+                    smallest_num.push(number[i]);  
+                }
+                console.log("2ND Largest number : " + smallest_num[1]);
+            }
+            decendigOrder();
+        </script>
+    </body>
+</html>
