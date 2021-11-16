@@ -1,0 +1,51 @@
+<<html>
+    <head>
+        <title>Assignment_9</title>
+    </head>
+    <body>
+       <h1>EMPLOYEE DETAILS</h1>
+        <script>
+            // here i assign value to the variable
+            var name = prompt("Enter your Name"); 
+            var age = prompt("Enter your Age");
+            var age = parseInt(age);
+            var dept = prompt("Enter your Dept.");
+            var gender = prompt("Enter your Gender male / female");
+            var salary = prompt("Enter your Salary(in Number only ex:40000)");
+            var salary = parseInt(salary);
+            var total = salary + (salary*(24/100)) + (salary*(14/100));
+            var total = parseFloat(total);
+            // here i use console for
+            console.log("NAME : " + name);
+            console.log("AGE : " + age);
+            console.log("DEPT. : " + dept);
+            console.log("GENDER : " + gender);
+            if(gender === "male"){   
+                if(total >= 500000){
+                    var tax = ((total) - (total*(15/100)));
+                    console.log("Salary with 15% tax : " + tax);
+                }else if(total >= 300000){
+                    var tax1 = ((total) - (total*(10/100)));
+                    console.log("Salary with 10% tax : " + tax1);
+                }else if(total >= 400000){
+                    var tax2 = ((total) - (total*(5/100)));
+                    console.log("Salary with 5% tax : " + tax2);
+                }else{
+                    console.log("salary with 0% tax : " + total);
+                }
+            }else if(gender === "female"){
+                if(total >= 500000){
+                    var tax = ((total) - (total*(15/100)));
+                    console.log("Salary with 15% tax : " + tax);
+                }else if(total >= 700000){
+                    var tax1 = ((total) - (total*(10/100)));
+                    console.log("Salary with 10% tax : " + tax1); 
+                }else{
+                    console.log("salary with 0% tax : " + total);
+                }
+            }else{
+                console.log("enter gender(male/female) then salary will display");
+            }
+        </script>
+    </body>
+</html>
