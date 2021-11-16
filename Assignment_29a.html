@@ -1,0 +1,53 @@
+   
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Assignment_29a
+		</title>
+	</head>
+	<body>
+        <h1>Student details by json (Press F12)</h1>
+		<script type="text/javascript">
+            var studentDetails = () =>{
+                var student = {};
+                student.sname = prompt("Enter student name");
+                console.log("Name :" + student.sname )
+                student.age = prompt("enter age");
+                console.log("Age :" + student.age )
+                student.gender = prompt("Enter user Gender");
+                console.log("Gender :" + student.gender )
+                student.mark = [];
+                mark = prompt("Subject 1");
+                student.mark[0] = parseInt(mark);
+                mark = prompt("Subject 2");
+                student.mark[1] = parseInt(mark);
+                mark = prompt("Subject 3");
+                student.mark[2] = parseInt(mark);
+                student.total = 0;
+                student.avg = 0;
+
+                for (var i = 0 ; i < student.mark.length ; i++ ){
+                    student.total += student.mark[i]; 
+                }
+                console.log("total mark : " + student.total);
+
+                student.avg = student.total / (student.mark.length) ;
+                student.avg = parseInt(student.avg);
+                    console.log("Avarage mark : " + student.avg);
+                if (student.avg >= 40) {
+                    if ( student.avg >= 90)  {
+                        console.log("Got Distiction");
+                    } else if (student.avg >= 60) {
+                        console.log("Got first class");
+                    } else {
+                        console.log("Got Second class");
+                    }
+                } else {
+                    console.log("Student Is Failed");
+                }	
+         }
+			studentDetails();
+		</script>
+	</body>
+</html>
