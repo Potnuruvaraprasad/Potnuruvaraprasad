@@ -1,0 +1,26 @@
+
+   
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>assignment12</title>
+    </head>
+    <body>
+        <h1>Prime number 1 to 100 (press F12 to show the result)</h1>
+        <script>
+           
+            for(var coun = 1 ; coun <= 100 ; coun++){
+                var pri = 0;
+                  for(var count = 2 ; count <= coun-1 ; count++){
+                    if (coun % count == 0){
+                            pri = 1;
+                            // not a prime number
+                    }
+                    }
+                    if (pri == 0){
+                        console.log(coun);
+                    }
+            }
+        </script>
+    </body>
+</html>
