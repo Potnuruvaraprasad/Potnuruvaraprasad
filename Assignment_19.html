@@ -1,0 +1,27 @@
+
+   
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>assignment_19</title>
+    </head>
+    <body>
+        <h1>check palindrome  number 10 to 305(press f12 )</h1>
+        <script>
+               var n = 10;
+               while(n<=305){
+                var reverse = 0, remainder ,k = n;
+                    while (k>0) {
+                        remainder = k % 10;
+                        reverse = reverse * 10 + remainder;
+                        k = k / 10;
+                        k =parseInt(k);
+                    } 
+                    if (reverse == n){
+                        console.log(reverse);
+                    }
+                   n++;
+                }
+        </script>
+    </body>
+</html>
