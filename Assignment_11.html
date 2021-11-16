@@ -1,0 +1,27 @@
+
+   
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>assignment_11</title>
+    </head>
+    <body>
+        <h1>Prime number or not (press F12 to show the result)</h1>
+        <script>
+            var num = prompt("Enter The Number");
+            var num = parseInt(num);
+            var pri = 0;
+            for(var count = 2 ; count < num ; count++){
+                 if (num % count == 0){
+                        pri = 1;
+                    // not a prime number
+                  }
+                 }
+                 if (pri == 0){
+                    console.log("this is a prime number : " + num);
+                 }else{
+                    console.log("this is Not a prime number : " + num);
+                 }
+        </script>
+    </body>
+</html>
