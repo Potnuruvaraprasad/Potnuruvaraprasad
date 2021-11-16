@@ -1,0 +1,109 @@
+
+   
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment28</title>
+    </head>
+    <body>
+        <h1>SHOWING THE DATE OBJECT IN DIFFERENT PARTTEN (PRESS F12)</h1>
+        <script>
+            var number = prompt("Press (1) Nov/1/2021 (2)  November/1/2021 (3) 1/9/2021 (4) January,9th 2021 (5) 1-9-2021 (6) Monday,9th Jan 2021 (7) Monday, 9th jan 21 (8) 01-09-2021 09:34 Min (9) 01/09/2021 09:34:10 sec (10) 09/jan/2021 09:34 min")
+            number = parseInt(number);
+            var dateExcu = () => {
+                var date = new Date();
+                var month = ["January" , "February" , "March" , "April" , "May" , "June" , "July" , "August" , "September" , "October" , "November" , "December"];
+                var shortMonth = ["Jan" , "Feb" , "Mar" , "Apl" , "May" , "Jun" , "Jly" , "Aug" , "Sep" , "Oct" , "Nov" , "Dec"];
+                var monthNumber = [1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10 , 11 , 12];
+                var day =["Sunday" , "Monday" , "Tuesday" , "Wednesday" , "Thursday" ,"Friday" , "Saturday"];
+                switch(number){
+                    case 1 :
+                        var a = date.getMonth();
+                        a = shortMonth[a];
+                        console.log(a + " / " + date.getDate() + " / " + date.getFullYear() );
+                        break;
+                    case 2 :
+                    var a = date.getMonth();
+                        a = month[a];
+                        console.log(a + " / " + date.getDate() + " / " + date.getFullYear() );
+                        break; 
+                    case 3 :
+                        var a = date.getMonth();
+                        a = monthNumber[a];
+                        console.log(date.getDate() + " / " + a + " / " + date.getFullYear() );  
+                        break;
+                    case 4 :
+                        var a = date.getMonth(); a = month[a];
+                         b = date.getDate();
+                        if (b == (1 || 21 || 31 )){
+                            console.log( a + " , " + b + "st  " + date.getFullYear());
+                        }else if (b == (2 || 22)){
+                            console.log( a + " , " + b + "nd  " + date.getFullYear());
+                        }else if (b == (3 || 23)){
+                            console.log( a + " , " + b + "rd  " + date.getFullYear());
+                        }else{
+                            console.log( a + " , " + b + "th  " + date.getFullYear());
+                        }
+                        break;
+                    case 5 :
+                        var a = date.getMonth();
+                        a = monthNumber[a];
+                        console.log(date.getDate() + "-" + a + "-" + date.getFullYear() );
+                        break;
+                    case 6 :
+                        var c = date.getDay(); c = day[c];
+                         a = date.getMonth(); a = shortMonth[a];
+                         b = date.getDate();
+                        if (b == (1 || 21 || 31 )){
+                            console.log( c + "," + b + "st  " + a +" "+ date.getFullYear());
+                        }else if (b == (2 || 22)){
+                            console.log(c + "," + b + "nd  " + a +" "+ date.getFullYear());
+                        }else if (b == (3 || 23)){
+                            console.log( c +  "," + b + "rd  "+ a +" " + date.getFullYear());
+                        }else{
+                            console.log( c + "," + b + "th  " + a +" "+ date.getFullYear());
+                        }
+                        break;
+                    case 7:
+                        var c = date.getDay(); c = day[c];
+                         a = date.getMonth(); a = shortMonth[a];
+                         b = date.getDate();
+                         d = date.getFullYear();  d = d.toString().substr(-2);
+                        
+                        if (b == (1 || 21 || 31 )){
+                            console.log( c + "," + b + "st  " + a +" "+ d);
+                        }else if (b == (2 || 22)){
+                            console.log(c + "," + b + "nd  " + a +" "+d);
+                        }else if (b == (3 || 23)){
+                            console.log( c +  "," + b + "rd  "+ a +" " + d);
+                        }else{
+                            console.log( c + "," + b + "th  " + a +" "+ d);
+                        }
+                        break;
+                    case 8:
+                        var a = date.getMonth();
+                        a = monthNumber[a];
+                        console.log(date.getDate() + "-" + a + "-" + date.getFullYear() + "  "+ date.getHours()+ ":"+ date.getMinutes() + " min");
+                        break;
+                    case 9 :
+                    var a = date.getMonth();
+                        a = monthNumber[a];
+                        console.log(date.getDate() + " / " + a + " / " + date.getFullYear() + "  "+ date.getHours()+ ":"+ date.getMinutes() + ":" + date.getSeconds()+ " sec" );  
+                        break;
+                    case 10 :
+                    var c = date.getDay(); c = day[c];
+                         a = date.getMonth(); a = shortMonth[a];
+                         b = date.getDate();
+                        console.log( b + "/" + a +"/"+ date.getFullYear() + "  "+ date.getHours()+ ":"+ date.getMinutes() + " min");
+                        break;
+                    default :
+                    console.log(date);
+                }
+            }
+            dateExcu();
+            </script>
+            </body>
+            </html>
