@@ -1,0 +1,33 @@
+
+   
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>assignment_20</title>
+    </head>
+    <body>
+        <h1>check armstrong number or not (press f12 )</h1>
+        <script>
+                var n = prompt("enter the number"),n = parseInt(n), count = 0 , m = n, k = n, j = 0 , remainder, reverse = 0,f = 0;
+                
+               while(m > 0){
+                    m = m / 10;
+                    m = parseInt(m);
+                    count += 1;
+               }
+               while(k > 0){
+                    remainder = k % 10;
+                    reverse = reverse * 10 + remainder;
+                    k = k / 10;
+                    k = parseInt(k);
+                    j = remainder ** count;
+                    f = f + j;
+               }
+               if(n == f){
+                console.log(f + " this ia a armstrong number");
+               }else{
+                console.log("this ia not a armstrong number");
+               }  
+        </script>
+    </body>
+</html>
