@@ -1,0 +1,24 @@
+
+   
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>assignment13</title>
+    </head>
+    <body>
+        <h1>reverse the number</h1>
+        <script>
+                var num = prompt("enter a number minimum 2 digt.")
+                var num = parseInt(num);
+                var sum = 0;
+                var rev =0;
+            for ( ; num != 0 ; ){               
+                rev = num % 10;
+                sum = sum * 10 + rev;
+                num = (num/10);
+                num = parseInt(num);
+            }
+            alert(sum);
+        </script>
+    </body>
+</html>
