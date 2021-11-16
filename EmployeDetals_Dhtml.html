@@ -1,0 +1,60 @@
+   
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="EmployeeDetailsDhtml.css">
+        <script src="EmployeeDetailsDhtml.js"></script>
+        <title>EmployeeDetails_Dhtml</title>
+    </head>
+    <body> 
+            <ul id="ul1">
+                <h1>EMPLOYEE DETAILS</h1>
+                <li>
+                    <div class="levdiv"><label>First Name :</label></div>
+                    <div class="inputdiv"><input type="text" placeholder="Enter your first name" id="fname"></div>
+                </li>
+                <li>
+                    <div class="levdiv"><label>Last Name :</label></div>
+                    <div class="inputdiv"><input type="text" placeholder="Enter your last name" id="lname"></div>
+                </li>
+                <li>
+                    <div class="levdiv"><label>Age :</label></div>
+                    <div class="inputdiv"><input type="text" placeholder="Enter your Age" id="age"></div>
+                </li>
+                <li>
+                    <div class="levdiv"> <label>Department :</label></div>
+                    <div class="inputdiv">
+                        <select id="deptname">
+                            <option value="EE"> EE </option>
+                            <option value="EEE" selected> EEE </option>
+                            <option value="CS"> CS </option>
+                            <option value="IT"> IT </option>
+                            <option value="ETC"> ETC </option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <div class="levdiv"><label>Basic Salery :</label></div>
+                    <div class="inputdiv"><input type="text" placeholder="Enter Basic Salery" id="salary"></div>
+                </li>
+                <li id="btn">
+                    <div id="btndiv"><input type="button" value="Submit" onclick="fun();" ></div>
+                </li>
+            </ul>    
+            <ul id="results">
+                <h1>Salery Slip</h1>
+                <li>Fast Name :  <span id="FastName"></span></li>
+                <li>Last Name :  <span id="LastName"></span></li>
+                <li>Age :  <span id="Age"></span></li>
+                <li>Department :  <span id="Dept"></span></li>
+                <li>Basic Salery :  <span id="tsal"></span></li>
+                <li>Total Salary With TAX :  <span id="Bsal"></span></li>
+                <li id="btn">
+                    <div id="btndiv"><input type="button" value="Home" onclick="dis();" ></div>
+                </li>
+            </ul>
+    </body>
+</html>
