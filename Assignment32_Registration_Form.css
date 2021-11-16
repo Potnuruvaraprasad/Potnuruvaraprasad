@@ -1,0 +1,73 @@
+
+   
+#mainul{
+    border: 2px solid;
+    background-color: antiquewhite;
+    padding: 10px auto;
+    float: left;
+    width: 1290px;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+li{
+    list-style: none;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid;
+    margin: 10px;
+    width: 330px;
+    height: 27px;
+}
+.levl{
+    float: left;
+    width: 100px;
+    height: 30px;
+}
+.inp{
+    float: left;
+    width: 150px;
+}
+#firstli{
+    border: 2px solid;
+    width: 570px;
+    height: 300px;
+    float: left;
+}
+#sedli{
+    border: 2px solid;
+    width: 570px;
+    height: 300px;
+    float: left;
+}
+.levl2{
+    float: left;
+    width: 160px;
+    height: 30px;
+}
+.inp2{
+    float: left;
+    width: 290px; 
+}
+#langli , #eduli{
+    width: 480px;
+}
+#dnoli{
+    border: 2px solid;
+    width: 570px;
+    height: 300px;
+    float: left;
+}
+#btn{
+    border: 2px solid;
+    width: 570px;
+    height: 300px;
+    float: left;
+}
+input[type="button"]{
+    margin: 135px;
+    padding: 10px;
+    color: blue;
+    background-color: rgb(73, 218, 30);
+}
