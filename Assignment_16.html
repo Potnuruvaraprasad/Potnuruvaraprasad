@@ -1,0 +1,36 @@
+
+   
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>find the lucky number (Press F12)</h1>
+        <script>
+            var n = prompt("enter the number"), reverse = 0, remainder, r, j=0;
+            n = parseInt(n);
+            while (n>0) {
+                remainder = n %10;
+                reverse = reverse + remainder;
+                n = n / 10;
+                n=parseInt(n);
+            }
+            if(reverse>=10){
+                while(reverse>0){
+                    r = reverse %10;
+                    j = j + r
+                    reverse = reverse/10
+                    reverse=parseInt(reverse); 
+                } 
+                console.log(j);  
+            }else{
+                console.log(reverse);
+            }
+             
+        </script>
+    </body>
+</html>
