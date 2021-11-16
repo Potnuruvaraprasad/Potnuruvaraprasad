@@ -1,0 +1,27 @@
+
+   
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>assignment_18</title>
+    </head>
+    <body>
+        <h1>check palindrome  number or not (press f12 )</h1>
+        <script>
+               var n = prompt("enter the number"), reverse = 0, remainder , k = n;
+               n = parseInt(n);
+            while (k>0) {
+                remainder = k % 10;
+                reverse = reverse * 10 + remainder;
+                k = k / 10;
+                k =parseInt(k);
+            }
+            console.log(reverse)
+            if (reverse == n){
+                console.log("this is  a palindrome number");
+            }else{
+            console.log("this is  not a palindrome numbererse");
+            }
+        </script>
+    </body>
+</html>
